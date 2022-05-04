@@ -1,7 +1,42 @@
 //
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem;
+    background-color: red;
+}
+
+ol{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+
+    li{
+        list-style-type: none;
+        width: 300px;
+        height: 400px;
+        margin: 4rem;
+        color: white;
+        background-color: black;
+        text-align: center;
+
+        .internal-box{
+            margin: 1rem;
+        }
+
+        h2{
+            margin-bottom: 2rem;
+        }
+
+        div{
+            margin-bottom: 1rem;
+        }
+    }
+}
+

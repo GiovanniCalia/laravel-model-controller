@@ -9,12 +9,22 @@
 
 </head>
 <body>
-    <h1>Lista film</h1>
-    <ol>
-        @foreach ($movies as $movie)
-            <li>{{ $movie->title }}</li>
-        @endforeach
-    </ol>
-    
+    <header>
+        <h1>lista film</h1>
+    </header>
+    <main>
+        <ol>
+            @foreach ($movies as $movie)
+                <li>
+                    <div class="internal-box">
+                        <h2>{{ $movie->title }}</h2>
+                        <div>Voto: {{ $movie->vote}}</div>
+                        <div>Nazionalità: {{ $movie->nationality}}</div>
+                        <div>Data d'uscita: {{ $movie->date}}</div>
+                    </div>
+                </li>
+            @endforeach
+        </ol>
+    </main>
 </body>
 </html>
