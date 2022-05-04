@@ -10,17 +10,17 @@
 </head>
 <body>
     <header>
-        <h1>lista film</h1>
+        <h1>movie list</h1>
     </header>
     <main>
         <ol>
             @foreach ($movies as $movie)
                 <li>
                     <div class="internal-box">
-                        <h2>{{ $movie->title }}</h2>
-                        <div>Voto: {{ $movie->vote}}</div>
-                        <div>Nazionalità: {{ $movie->nationality}}</div>
-                        <div>Data d'uscita: {{ $movie->date}}</div>
+                        <h2>{{ $movie->original_title }}</h2>
+                        <div>Vote: {{ $movie->vote}}</div>
+                        <div>Nationality: {{ $movie->nationality}}</div>
+                        <div>Date: {{ $movie->date}}</div>
                     </div>
                 </li>
             @endforeach
